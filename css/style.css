@@ -1,0 +1,47 @@
+body {
+    background-color: white;
+    font-family: Montserrat;
+}
+
+.gifani {
+    position: relative; 
+    left: 35%;
+    top: 20rem;
+}
+
+.loader {
+    position: fixed;
+    background-color: #272929;
+    width: 100%;
+    height: 100%;
+}
+
+.anitext {
+position: relative;
+left: 46.9%;
+top: 22vh;
+color: #DFE0CB;
+}
+
+
+.anired {
+    position: relative;
+    left: 52.5%;
+    top: 16vh;
+    color:#CF0B0B;
+}
+
+.dissapear {
+animation-name: fade;
+animation-duration: 2s;
+}
+
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
