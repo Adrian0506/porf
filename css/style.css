@@ -43,9 +43,9 @@ body {
     top: -5rem;
     left: -9px;
     width: 105%; 
-    height: 64rem;
+    height: 68rem;
     background-size: cover;
-    opacity: 1;
+    opacity: 0.9;
 }
 
 .loader {
@@ -78,9 +78,15 @@ color: #DFE0CB;
      background-color: #272929;
      font-family: 'Open Sans Condensed', sans-serif;
      left: 0px;
+     animation-name: top-bot;
+     animation-duration: 7s;
+     transition: top 0.3s;
 }
 
+a:active {
+  border-bottom: 3px solid red;
 
+}
 
 a:hover {
     transition-duration: 0.4s;
@@ -88,8 +94,87 @@ a:hover {
 
 }
 
+.nav-ani {
+ animation-name: nav-ani;
+ animation-duration: 1s;
+}
+
+.nav-opa {
+ animation-name: opanavi;
+ animation-duration: 1s;
+}
+.text-container {
+    position: relative;
+    top: -50rem;
+    left: 30%;
+    width: 600px;
+    height: 300px;
+    opacity: 0.7;
+    border-radius: 12px;
+    background-color: #292b2c;
+    animation-name: text-cont;
+    animation-duration: 5s;
+
+}
+
+.cont-but {
+    position: relative;
+    background-color: transparent; /* Green */
+    left: 37%;
+    top: 10%;
+  border: none;
+  color: white;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 25px;
+  transition-duration: 0.4s;
+  border: 2px solid #CF0B0B;
+  cursor: grab;  
+}
 
 
+.cont-but:hover {
+    background-color: #CF0B0B;
+}
+
+
+
+.text-cont {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    left: 20%;
+    top: 2rem;
+}
+
+.text-cont1 {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    left: 16%;
+    top: 2rem;
+}
+
+.text-cont2 {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    left:6%;
+    top: 2rem;
+}
+
+
+.text-cont4 {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    left:32%;
+    top: 2rem;
+}
 
 a {
     display: block;
@@ -107,7 +192,6 @@ li {
     text-decoration: none;
     left:40rem;
 }
-
 
 
 .anired {
@@ -135,6 +219,16 @@ animation-duration: 3s;
 }
 
 
+@keyframes top-bot {
+    0% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 @keyframes fade-red{
 
     100% {
@@ -143,6 +237,40 @@ animation-duration: 3s;
  
 }
 
+
+@keyframes navani {
+    0% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+@keyframes opanavi {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+
+
+@keyframes text-cont {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+
+    100% {
+       opacity: 0.7;
+       transform: translateX(0px);
+    }
+}
 
 
 @keyframes fade {

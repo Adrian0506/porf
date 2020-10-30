@@ -14,9 +14,9 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.querySelector('.navi').style.opacity = "1";
+    document.querySelector('.nav').style.top = "-20px";
   } else {
-    document.querySelector('.navi').style.opacity = "0.6";
+    document.querySelector('.nav').style.top = "-110px";
   }
   prevScrollpos = currentScrollPos;
 }
