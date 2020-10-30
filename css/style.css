@@ -23,6 +23,40 @@ top: 22vh;
 color: #DFE0CB;
 }
 
+.nav {
+    position: fixed;
+    display: inline;
+    list-style-type: none;
+   float: left;
+    background-color: var(--main-gray);
+     padding: 1rem;
+     width: 100%;
+     top: -20px;
+     background-color: #272929;
+     opacity: 0.8;
+    left: 0px;
+    opacity: 0.9;
+}
+
+
+a {
+    display: block;
+    padding: 15px;
+    background-color: none;
+    text-decoration: none;
+    color:white;
+}
+
+li {
+    display: inline;
+    float: left;
+    position: relative;
+    align-self: center;
+    text-decoration: none;
+    left:40rem;
+}
+
+
 
 .anired {
     position: relative;
