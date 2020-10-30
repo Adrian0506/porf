@@ -12,19 +12,21 @@ body {
 
 .logo_resize {
   position: relative;
-   left: -42rem!important;
-   top: -5rem;
-  width: 200px;
-  height: 200px;
+   left: -41rem!important;
+   top: -0.5rem;
+  width: 190px;
+  height: 55px;
   max-width:100%;
   max-height:100%;
-
+ animation-name: left-right;
+ animation-duration: 5s;
 
 }
 
 .move_left {
     position: relative;
     top: 0.5rem;
+    font-size: 20px;
     left: 35rem;
 }
 .aboutme {
@@ -74,8 +76,19 @@ color: #DFE0CB;
      height: 60px;
      top: -20px;
      background-color: #272929;
+     font-family: 'Open Sans Condensed', sans-serif;
      left: 0px;
 }
+
+
+
+a:hover {
+    transition-duration: 0.4s;
+    color: #CF0B0B;
+
+}
+
+
 
 
 a {
@@ -112,12 +125,25 @@ animation-duration: 3s;
 
 @keyframes left-right {
     0% {
-        transform: translateX(10rem)
+        transform: translateX(-7rem);
+        opacity: 0;
     }
     100% {
-        transform: translateX(30rem);
+        transform: translateX(0rem);
+        opacity: 1;
     }
 }
+
+
+@keyframes fade-red{
+
+    100% {
+        color: #CF0B0B;
+    }
+ 
+}
+
+
 
 @keyframes fade {
     0% {
