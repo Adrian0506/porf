@@ -20,3 +20,19 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+
+
+
+window.addEventListener('scroll', function(e) {
+ var elem = document.querySelector('.container_hire')
+  var x = elem.scrollLeft;
+  var y = window.scrollY;
+  console.log(y)
+
+  if (y > 500) {
+    console.log('passed point')
+    document.querySelector('.speed_hire').classList.add('leftr')
+    document.querySelector('.why_hire').classList.add('fadein')
+    document.querySelector('.book_learn').classList.add('rightl')
+  }
+});
