@@ -157,7 +157,7 @@ body {
 .resize_about {
     position: relative;
     top: 0px;
-    left: 0px;
+    left: -9px;
     width: 105%; 
     height: 68rem;
     background-size: cover;
