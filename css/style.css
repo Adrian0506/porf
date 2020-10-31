@@ -4,6 +4,96 @@
 }
 
 
+.skills_title {
+    position: relative;
+    left: 44%;
+    font-size: 50px;
+}
+
+
+.circ_resize{
+    position: relative;
+   width: 150px;
+   top: 1rem;
+   margin: 20px;
+   left: 27%;
+}
+
+
+.circ_resize2 {
+    position: relative;
+    width: 150px;
+    top: 12rem;
+    margin:20px;
+    left: -14%;
+}
+.javascript {
+    position: relative;
+    font-size: 15px;
+    left: 35.3rem;
+    top: -6.5rem;
+}
+
+.html5 {
+    position: relative;
+    font-size: 15px;
+    left: 48.3rem;
+    top: -8.5rem;
+}
+
+.css {
+    position: relative;
+    font-size: 15px;
+    left: 61rem;
+    top: -10.5rem;
+}
+
+
+.jquery {
+    position: relative;
+    font-size: 15px;
+    left: 72.5rem;
+    top: -12.5rem;
+}
+
+
+.react {
+    position: relative;
+    font-size: 15px;
+    left: 85rem;
+    top: -14.5rem;
+}
+
+
+.nodejs {
+    position: relative;
+    font-size: 15px;
+    left: 48rem;
+    top: -4.9rem;
+}
+
+.mysql {
+    position: relative;
+    font-size: 15px;
+    left: 60.5rem;
+    top: -6.9rem;
+
+}
+
+.angjs {
+    position: relative;
+    font-size: 15px;
+    left: 72rem;
+    top: -8.9rem;
+}
+
+.skills_text {
+    position: relative;
+    left: 38%;
+    font-size: 20px;
+
+}
+
 .my_skills {
 position: relative;
 width: 100%;
@@ -322,6 +412,22 @@ animation-duration: 2s;
 }
 
 
+.skillani {
+    animation-name: down-top;
+    animation-duration: 2s;
+}
+
+
+.skillbio {
+    animation-name: left-right;
+    animation-duration: 2s;
+}
+
+.skilltitle {
+    animation-name: right-left;
+    animation-duration: 2s;
+}
+
 
 @keyframes study-right {
     0% {
@@ -360,7 +466,7 @@ animation-duration: 2s;
 
 @keyframes right-left {
     0% {
-        transform: translateX(5rem);
+        transform: translateX(7rem);
         opacity:0;
     }
     100% {
@@ -462,10 +568,12 @@ animation-duration: 2s;
 
 @keyframes down-top {
     0% {
-        transform: translateY(5rem);
+        transform: translateY(13rem);
+        opacity: 0;
     }
 
     100% {
         transform: translateY(0px);
+        opacity: 1;
     }
 }

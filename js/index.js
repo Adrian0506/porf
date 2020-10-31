@@ -35,4 +35,10 @@ window.addEventListener('scroll', function(e) {
     document.querySelector('.why_hire').classList.add('fadein')
     document.querySelector('.book_learn').classList.add('rightl')
   }
+
+  if (y > 1500) {
+    document.querySelector('.skill_img').classList.add('skillani')
+    document.querySelector('.skills_text').classList.add('skillbio')
+    document.querySelector('.skills_title').classList.add('skilltitle')
+  }
 });
