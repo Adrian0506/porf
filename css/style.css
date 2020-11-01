@@ -110,9 +110,22 @@ background-color: #d3d3d3;
 opacity: 0.7;
 }
 
+
+
+.contact_me {
+    position: relative;
+width: 100%;
+height: 40rem;
+left: -0.5rem;
+top: 40rem;
+background-color: #d3d3d3;
+opacity: 0.7;
+}
+
 .project_text {
     position: relative;
-    left: 30rem;
+    left: 15%;
+    top: 10rem;
 }
 
 body {
@@ -153,6 +166,8 @@ body {
     z-index: 1;
 
 }
+
+
 
 .resize_about {
     position: relative;
@@ -435,6 +450,80 @@ animation-duration: 2s;
     animation-duration: 2s;
 }
 
+.textproj {
+    position: relative;
+    left: 15%;
+    top: 10rem;
+    font-size: 18px;
+}
+.projani {
+animation-name: rightfast;
+animation-duration: 2s;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 15%;
+    border-radius: 5px;
+  }
+
+.carre {
+    border-radius: 5px 5px 0 0;
+  }
+  
+.animedb {
+    position: relative;
+    left: 15%;
+    top: 12rem;
+}
+
+.projs {
+    animation-name: study-left;
+    animation-duration: 2s;
+}
+
+
+.projcont {
+    animation-name: fades;
+    animation-duration: 2s;
+}
+
+
+@keyframes fades {
+    0% {
+        transform: translateY(15rem);
+        opacity:0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes right-fade {
+    0% {
+        transform: translateX(-20rem);
+       opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes rightfast {
+    0%{ 
+        transform: translateX(50rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
 @keyframes study-right {
     0% {

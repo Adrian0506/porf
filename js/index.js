@@ -41,4 +41,13 @@ window.addEventListener('scroll', function(e) {
     document.querySelector('.skills_text').classList.add('skillbio')
     document.querySelector('.skills_title').classList.add('skilltitle')
   }
+
+
+  if (y > 2200) {
+    document.querySelector('.project_text').classList.add('projani')
+    document.querySelector('.textproj').classList.add('projs')
+  }
+  if (y > 2600) {
+    document.querySelector('.card_containers').classList.add('projcont')
+  }
 });
